@@ -44,3 +44,10 @@ This theme replaces the Hub Inspired Theme
 - Use the module\do_not_upload\email_templates\2fa_template.html as 2FA Code template
 - Use the module\do_not_upload\email_templates\password_reset.html as Password Reset template
 - Disable scope colors, tab colors and tab icons
+
+## Testing
+Run all PHPUnit tests with:
+
+```bash
+phpunit tests
+```

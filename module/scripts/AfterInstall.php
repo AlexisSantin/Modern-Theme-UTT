@@ -7,6 +7,7 @@ class AfterInstall
     public function run($container)
     {
         $this->container = $container;
+        $this->clearCache();
     }
 
     protected function clearCache()
