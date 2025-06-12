@@ -1,6 +1,6 @@
 {
   "name": "Modern Theme",
-  "description": "This theme tries to achieve what the Hub Spot inspired theme did but without any major structual modifications.",
+  "description": "This theme tries to achieve what the Hub Spot inspired theme did but without any major structural modifications.",
   "author": "Novastream AB",
   "acceptableVersions": [">=9.0.0"],
   "version": "1.4.0",
