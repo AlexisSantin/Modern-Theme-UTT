@@ -40,7 +40,3 @@ This theme replaces the Hub Inspired Theme
 - Done.
 
 # Customization (optional)
-- Change all top nav icons to white.
-- Use the module\do_not_upload\email_templates\2fa_template.html as 2FA Code template.
-- Use the module\do_not_upload\email_templates\password_reset.html as Password Reset template.
-- Disable scope colors, tab colors and tab icons.
