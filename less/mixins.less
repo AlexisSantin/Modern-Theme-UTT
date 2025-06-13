@@ -213,3 +213,26 @@
       border-bottom-right-radius: var(--panel-border-radius);
   }
 }
+.glass() {
+  backdrop-filter: blur(@glass-blur) saturate(180%);
+  background: @glass-bg-light;
+  border: 1px solid @glass-border;
+  border-radius: @radius-l;
+  box-shadow: @shadow-l;
+  transition: box-shadow .18s ease, transform .18s ease;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.16);
+  }
+}
+
+[data-theme='dark'] {
+  .glass() {
+    background: @glass-bg-dark;
+  }
+}
+
+.focus-ring() {
+  outline: @focus-ring;
+  outline-offset: 2px;
+}
