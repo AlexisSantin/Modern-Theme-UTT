@@ -5113,7 +5113,6 @@ button.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 21px;
-  background-color: var(--panel-bg);
   border: 1px solid transparent;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5494,7 +5493,6 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: var(--modal-content-bg);
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
@@ -16946,8 +16944,18 @@ body[data-navbar="side"] input.global-search-input:focus {
   }
 }
 #navbar .navbar {
+  backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
   border-bottom-width: 0 !important;
   box-shadow: var(--navbar-box-shadow);
+}
+#navbar .navbar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
 }
 #navbar .navbar img.logo {
   max-height: 100%;
@@ -23749,6 +23757,53 @@ fieldset[disabled] .btn-info:hover {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+/* glass theme overrides */
+.navbar,
+.sidebar {
+  backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+.navbar:hover,
+.sidebar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+.panel,
+.modal-content,
+.record-panel,
+.kanban-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+  background-color: transparent;
+}
+.panel:hover,
+.modal-content:hover,
+.record-panel:hover,
+.kanban-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+.navbar a:focus-visible,
+.sidebar a:focus-visible,
+.panel a:focus-visible,
+.panel button:focus-visible,
+.modal-content a:focus-visible,
+.modal-content button:focus-visible,
+.record-panel a:focus-visible,
+.record-panel button:focus-visible,
+.kanban-card a:focus-visible,
+.kanban-card button:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
 }
 .clearfix:before,
 .clearfix:after,

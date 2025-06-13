@@ -1,0 +1,27 @@
+/* glass theme overrides */
+
+.navbar,
+.sidebar {
+  .glass();
+}
+
+.panel,
+.modal-content,
+.record-panel,
+.kanban-card {
+  .glass();
+  background-color: transparent;
+}
+
+.navbar a:focus-visible,
+.sidebar a:focus-visible,
+.panel a:focus-visible,
+.panel button:focus-visible,
+.modal-content a:focus-visible,
+.modal-content button:focus-visible,
+.record-panel a:focus-visible,
+.record-panel button:focus-visible,
+.kanban-card a:focus-visible,
+.kanban-card button:focus-visible {
+  .focus-ring();
+}
